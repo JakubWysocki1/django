@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Log In{% endblock title %}
+
+{% block content %}
+<div class="col-xl-4 m-4">
+  <div class="card">
+    <div class="card-header">
+      <h2>Log In</h2>
+    </div>
+    <div class="card-body">
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-success" type="submit">Log In</button> 
+        <a class="pl-2" href="{% url 'password_reset'%}">Forgot password</a>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock content %}

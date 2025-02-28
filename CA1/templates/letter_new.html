@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container pt-4">
+  <div class="card">
+      <div class="card-header">
+          <h1>New Letter</h1>
+          <p>Your letter will be visible to everyone</p>
+      </div>
+      <div class="card-body">
+      <form action="" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-success ml-2" type="submit">Save</button>
+      </form>
+    </div>
+{% endblock content %}

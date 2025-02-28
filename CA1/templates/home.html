@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+
+<div id="home" class="row mt-4">
+  <div id="facts" class="col-md-3 ">
+    <div id="container" class=" bg-light h-100 ml-3">
+      <h3 class="pt-3 text-center">Our Top 5 LadyGaga songs</h3>
+      <h5 class="ml-3 pt-2">1. <a href="https://www.youtube.com/watch?v=bESGLojNYSo" >Poker Face </h5></a>
+      <br>
+      <h5 class="ml-3">2.<a href="https://www.youtube.com/watch?v=qrO4YZeyl0I" > Bad Romance</h5></a>
+      <br>
+      <h5 class="ml-3">3.<a href="https://www.youtube.com/watch?v=2Abk1jAONjw" > Just Dance</h5> </a>
+      <br>
+      <h5 class="ml-3">4.<a href="https://www.youtube.com/watch?v=bESGLojNYSo" > Paparazzi</h5> </a>
+      <br>
+      <h5 class="ml-3">5.<a href="https://www.youtube.com/watch?v=bo_efYhYU2A" > Shallow</h5> </a>
+    </div>
+
+  </div>
+        <div id="container" class="col-md-7 bg-light ml-3">
+          <div id="text_left">
+            <h3 class="text-center">About Us</h3>
+            <p class="text-center">♥♥♥</p>
+            <p class="text-center">This website has been created for all the Little Monsters!</p>
+            <p class="text-center">♥♥♥</p>
+            <p class="text-center">Here you will find all of Gaga's albums with a link to them!</p>
+            <p class="text-center">♥♥♥</p>
+            <p class="text-center">We also provide movies and TV shows where Lady Gaga had appeared!</p>
+            <p class="text-center">♥♥♥</p>
+            <p class="text-center">Last but certainly NOT least, you can upload your own letters to Mother Monster!</p>    
+            <p class="text-center">♥♥♥</p>
+          </div>
+          <div id="image_mid">
+            {% load static %}
+            <img class="card-img-top rounded-circle" src="{% static 'images/LadyGaga.jpg' %}">  
+          </div>
+          <div id="text_right">
+            <h3 class="text-center">About Gaga</h3>
+            <p class="text-center">♥♥♥</p>
+            <p class="text-center">Lady Gaga's real name is Stefani Joanne Angelina Germanotta.</p>
+            <p class="text-center">♥♥♥</p>
+            <p class="text-center">Stefani Germanotta was born on the 28th of March 1986.</p>
+            <p class="text-center">♥♥♥</p>
+            <p class="text-center">Gaga was born in New York and that is also where she grew up.</p>
+            <p class="text-center">♥♥♥</p>
+            <p class="text-center">Gaga is a Christian and she shows it throughout her music.</p>
+            <p class="text-center">♥♥♥</p>
+          </div>
+        </div>
+  <div class="col-xl-2 ml-3" id="chat"> 
+    <iframe src="https://minnit.chat/GagaChat?embed&&nickname=" style="border:none;width:90%;height:500px;" allowTransparency="true"></iframe><br><a href="https://minnit.chat/GagaChat" target="_blank"></a>
+  </div>
+</div> 
+
+{% endblock content %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+    <div class="container mt-5"> 
+      <div class="row pt-5">
+        <div class="col-sm-3">
+            
+            <img class="card-img-top" src="{% static 'images/AStarIsBorn.jpg' %}" class="img-responsive">
+            <div class="card-body bg-white">
+                <h4 class="card-title">A Star Is Born</h4>
+                <p class="card-text"> The Movie is about Ally, a normal girl who meets Jack, a Rock Star. The movie is about their love story and how he makes her a star. The movie also shows Jack's issues.</p>
+            </div>
+            <div class="card-footer bg-white">
+                <a href="https://en.wikipedia.org/wiki/A_Star_Is_Born_(2018_film)" target="_blank" class="btn btn-info">Here's more</a>
+            </div>
+        </div>  
+        
+        <div class="col-sm-3">
+           
+            <img class="card-img-top" src="{% static 'images/GAGAFiveFootTwo.jpg' %}" class="img-responsive">
+            <div class="card-body bg-white">
+                <h4 class="card-title">Five Foot Two</h4>
+                <p class="card-text"> The Movie is about Lady Gaga and her everyday life. It is a documentary movie and in it we get to see the making of her album 'Joanne'. We also see her preparing for Superbowl.</p>
+            </div>
+            <div class="card-footer bg-white">
+                <a href="https://en.wikipedia.org/wiki/Gaga:_Five_Foot_Two" target="_blank" class="btn btn-info">Here's more</a>
+            </div>
+        </div>  
+            
+        <div class="col-sm-3">
+         
+            <img class="card-img-top" src="{% static 'images/AHS.jpg' %}" class="img-responsive">
+            <div class="card-body bg-white">
+                <h4 class="card-title">AHS: Hotel</h4>
+                <p class="card-text"> This i a TV series and Gaga has appeared in it as the Countess, a vampire who gathers children and also makes them vampires so that she forever has children.</p>
+             </div>
+             <div class="card-footer bg-white">
+                <a href="https://en.wikipedia.org/wiki/American_Horror_Story:_Hotel" target="_blank" class="btn btn-info">Here's more</a>
+             </div>
+        </div>  
+
+        <div class="col-sm-3">
+           
+            <img class="card-img-top" src="{% static 'images/Machete.jpg' %}" class="img-responsive">
+            <div class="card-body bg-white">
+                <h4 class="card-title">Machete Kills</h4>
+                <p class="card-text"> The Movie is about the main character, Machete Cortez, attepmting to capture weapon dealers who have been supplying the mexican drug cartels. He does that with Sartana Rivera.</p>
+            </div>
+            <div class="card-footer bg-white">
+                <a href="https://en.wikipedia.org/wiki/Machete_Kills" target="_blank" class="btn btn-info">Here's more</a>
+            </div>       
+        </div>  
+        
+    </div>
+{% endblock content %}

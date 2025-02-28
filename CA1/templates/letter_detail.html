@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<div id="letter_detail" class="container pt-4">
+
+    <div class="card">
+        <div class="card-header">
+            <span class="font-weight-bold"><h2><u>{{ object.title }}</u></h2></span>
+            <span class="text-muted"><p>by {{ object.author }} | {{ object.date }}</p></span>
+            {% if letter.author.pk == request.user.pk %}
+            <a href="{% url 'letter_edit' letter.pk %}">Edit</a> |
+            <a href="{% url 'letter_delete' letter.pk %}">Delete</a> |
+            {% endif %}
+            <a href="{% url 'comment_new'%}">Add New Comment</a>
+        </div>
+        <div class="card-body"></div>
+            <h3 class="pl-3 pb-5">{{ object.body }}</h3>
+            <p class="pl-3" style="color: rgb(30, 158, 158);">Back to <a style="color: rgb(8, 196, 196)"  href="{% url 'letter_list' %}">All Letters</a>.</p>
+        </div>
+        <br> 
+        <div class="card-footer bg-light border-0">
+            <h4 class="font-weight-bold pb-2"><u> Comments</u></h4>
+            {% for comment in letter.comments.all %}
+                
+                <p >{{ comment.author }}: </p>
+                <p style="color: grey;">{{ comment }}</p>
+        
+              <br>
+            {% endfor %}
+        </div>
+       
+
+    </div>
+
+
+</div>
+{% endblock content %}
+
+
+
+        
